@@ -366,6 +366,15 @@ Menu
     width: 100vw;
     padding: 5px;
   }
+  header {
+    width: 110vw;
+  }
+  #menu .menu .menu-percent-off-card-1 {
+    width: 500px;
+  }
+  #menu .menu .menu-percent-off-card-2 {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 500px) {
   body {
