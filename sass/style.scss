@@ -152,7 +152,9 @@ Menu
 
     .menu-percent-off {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
       gap: 2rem;
 
       &-card-1 {
@@ -226,11 +228,11 @@ Menu
         display: flex;
         align-items: center;
         height: 188px;
+        width: 540px;
         border-radius: 16px;
-        width: 380px;
         img {
           width: 300.62px;
-          height: 200.62px;
+          height: 190.62px;
         }
       }
     }
@@ -392,11 +394,11 @@ Menu Cards
   }
 }
 
-@media screen and (max-width:1024px) {
-    body{
-        width: 100vw;
-        padding:5px;
-    }
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100vw;
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -442,6 +444,7 @@ Menu
         width: 100%;
 
         &-card-1 {
+            width: 350px;
           &-info {
             h2 {
               font-size: 30px;
@@ -450,6 +453,7 @@ Menu
         }
 
         &-card-2 {
+            width: 350px;
           &-info {
             h2 {
               font-size: 30px;
@@ -495,4 +499,3 @@ Menu Cards
     }
   }
 }
-

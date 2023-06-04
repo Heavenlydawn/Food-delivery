@@ -146,7 +146,9 @@ Menu
 }
 #menu .menu .menu-percent-off {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
   gap: 2rem;
 }
 #menu .menu .menu-percent-off-card-1 {
@@ -213,12 +215,12 @@ Menu
   display: flex;
   align-items: center;
   height: 188px;
+  width: 540px;
   border-radius: 16px;
-  width: 380px;
 }
 #menu .menu .menu-percent-off-card-1 img, #menu .menu .menu-percent-off-card-2 img {
   width: 300.62px;
-  height: 200.62px;
+  height: 190.62px;
 }
 #menu .menu-slide {
   display: grid;
@@ -415,8 +417,14 @@ Menu
     gap: 2rem;
     width: 100%;
   }
+  #menu .menu .menu-percent-off-card-1 {
+    width: 350px;
+  }
   #menu .menu .menu-percent-off-card-1-info h2 {
     font-size: 30px;
+  }
+  #menu .menu .menu-percent-off-card-2 {
+    width: 350px;
   }
   #menu .menu .menu-percent-off-card-2-info h2 {
     font-size: 30px;
